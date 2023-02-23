@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".game">
+
+   <!--
+    TITLE: game interface
+    PURPOSE: inserts buttons in the page to be the squares/tile to move to play the game.
+    each square has a different number on it, 16th square doesn't have any color or number
+    this game is specifically for tablet use
+    DATE: 22 February 2023
+    AUTHOR: Zella Running
+-->
+
+    <!--helps make grid layout and also helps arrange elements based on specific rules for the game-->
+   <RelativeLayout
+       android:id= "@+id/group"
+       android:layout_gravity="center"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       tools:ignore="UselessParent">
+
+       <!--all the buttons down below are the tiles/squares for the game-->
+      <Button
+          android:id="@+id/button1"
+          style = "@style/ButtonStyle"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true"
+          android:tag="00"
+          android:text="@string/_1" />
+
+      <Button
+          android:id="@+id/button2"
+          style = "@style/ButtonStyle"
+          android:layout_alignParentTop="true"
+          android:layout_toEndOf="@+id/button1"
+          android:tag="01"
+          android:text="@string/_2" />
+
+      <Button
+          android:id="@+id/button3"
+          style = "@style/ButtonStyle"
+          android:layout_alignParentTop="true"
+          android:layout_toEndOf="@+id/button2"
+          android:tag="02"
+          android:text="@string/_3" />
+
+      <Button
+          android:id="@+id/button4"
+          style = "@style/ButtonStyle"
+          android:layout_alignParentTop="true"
+          android:layout_toEndOf="@+id/button3"
+          android:tag="03"
+          android:text="@string/_4" />
+
+      <Button
+          android:id="@+id/button5"
+          style="@style/ButtonStyle"
+          android:layout_below="@+id/button1"
+          android:layout_alignParentStart="true"
+          android:tag="10"
+          android:text="@string/_5" />
+
+      <Button
+          android:id="@+id/button6"
+          style="@style/ButtonStyle"
+          android:layout_below="@id/button1"
+          android:layout_toEndOf="@id/button1"
+          android:tag="11"
+          android:text="@string/_6" />
+
+      <Button
+          android:id="@+id/button7"
+          style = "@style/ButtonStyle"
+          android:layout_below="@id/button1"
+          android:layout_toEndOf="@id/button2"
+          android:tag="12"
+          android:text="@string/_7"/>
+
+      <Button
+          android:id="@+id/button8"
+          style="@style/ButtonStyle"
+          android:layout_below="@id/button1"
+          android:layout_toEndOf="@id/button3"
+          android:tag="13"
+          android:text="@string/_8" />
+
+      <Button
+          android:id="@+id/button9"
+          style = "@style/ButtonStyle"
+          android:layout_alignParentStart="true"
+          android:layout_below="@id/button5"
+          android:tag="20"
+          android:text="@string/_9"/>
+
+      <Button
+          android:id="@+id/button10"
+          style = "@style/ButtonStyle"
+          android:layout_below="@id/button5"
+          android:layout_toEndOf="@id/button1"
+          android:tag="21"
+          android:text="@string/_10"/>
+
+      <Button
+          android:id="@+id/button11"
+          style = "@style/ButtonStyle"
+          android:layout_below="@id/button5"
+          android:layout_toEndOf="@id/button2"
+          android:tag="22"
+          android:text="@string/_11"/>
+
+      <Button
+          android:id="@+id/button12"
+          style = "@style/ButtonStyle"
+          android:layout_below="@id/button5"
+          android:layout_toEndOf="@id/button3"
+          android:tag="23"
+          android:text="@string/_12"/>
+
+      <Button
+          android:id="@+id/button13"
+          style = "@style/ButtonStyle"
+          android:layout_alignParentStart="true"
+          android:layout_below="@id/button9"
+          android:tag="30"
+          android:text="@string/_13"/>
+
+      <Button
+          android:id="@+id/button14"
+          style = "@style/ButtonStyle"
+          android:layout_below="@id/button9"
+          android:layout_toEndOf="@id/button1"
+          android:tag="31"
+          android:text="@string/_14"/>
+
+      <Button
+          android:id="@+id/button15"
+          style = "@style/ButtonStyle"
+          android:layout_below="@id/button9"
+          android:layout_toEndOf="@id/button2"
+          android:tag="32"
+          android:text="@string/_15"/>
+
+      <!--for button 16 it sets color to colorFreeButton to make it transparent-->
+      <Button
+          android:id="@+id/button16"
+          style="@style/ButtonStyle"
+          android:layout_below="@id/button9"
+          android:layout_toEndOf="@id/button3"
+          android:background="@color/colorFreeButton"
+          android:tag="33" />
+
+
+
+  </RelativeLayout>
+
+</FrameLayout>
