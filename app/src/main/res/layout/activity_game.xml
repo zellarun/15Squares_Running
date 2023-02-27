@@ -9,7 +9,7 @@
     TITLE: game interface
     PURPOSE: inserts buttons in the page to be the squares/tile to move to play the game.
     each square has a different number on it, 16th square doesn't have any color or number
-    this game is specifically for tablet use
+    SPECIFICALLY USED FOR TABLET!!!
     DATE: 22 February 2023
     AUTHOR: Zella Running
 -->
@@ -53,7 +53,8 @@
           android:layout_alignParentTop="true"
           android:layout_toEndOf="@+id/button3"
           android:tag="03"
-          android:text="@string/_4" />
+          android:text="@string/_4"
+          tools:ignore="VisualLintBounds" />
 
       <Button
           android:id="@+id/button5"
@@ -85,7 +86,8 @@
           android:layout_below="@id/button1"
           android:layout_toEndOf="@id/button3"
           android:tag="13"
-          android:text="@string/_8" />
+          android:text="@string/_8"
+          tools:ignore="VisualLintBounds" />
 
       <Button
           android:id="@+id/button9"
@@ -117,7 +119,8 @@
           android:layout_below="@id/button5"
           android:layout_toEndOf="@id/button3"
           android:tag="23"
-          android:text="@string/_12"/>
+          android:text="@string/_12"
+          tools:ignore="VisualLintBounds" />
 
       <Button
           android:id="@+id/button13"
@@ -150,7 +153,9 @@
           android:layout_below="@id/button9"
           android:layout_toEndOf="@id/button3"
           android:background="@color/colorFreeButton"
-          android:tag="33" />
+          android:tag="33"
+          android:text="@string/_none"
+          tools:ignore="VisualLintBounds,TextSizeCheck" />
 
 
 
